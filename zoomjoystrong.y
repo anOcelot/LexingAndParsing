@@ -29,8 +29,6 @@ extern int yydebug;
 %token ERROR
 %token END
 %token <floatVal> FLOATVAL
-%token ERRORTOK
-
 
 %%
 program: 
@@ -59,11 +57,6 @@ statement:
 	rectangle END_STATEMENT{}
 	|
 	set_color END_STATEMENT{}
-	|
-	ERRTOK{
-		printf("Error");
-	};
-	
 	
 	
 

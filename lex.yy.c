@@ -363,8 +363,8 @@ static void yy_fatal_error (yyconst char msg[]  );
 	*yy_cp = '\0'; \
 	(yy_c_buf_p) = yy_cp;
 
-#define YY_NUM_RULES 12
-#define YY_END_OF_BUFFER 13
+#define YY_NUM_RULES 11
+#define YY_END_OF_BUFFER 12
 /* This struct is not used in this scanner,
    but its presence is necessary. */
 struct yy_trans_info
@@ -374,8 +374,8 @@ struct yy_trans_info
 	};
 static yyconst flex_int16_t yy_accept[48] =
     {   0,
-        0,    0,   13,   10,   10,    8,    1,   10,   10,   10,
-       10,   10,   11,    8,    0,    0,    0,    0,    0,    0,
+        0,    0,   12,   10,   10,    8,    1,   10,   10,   10,
+       10,   10,   10,    8,    0,    0,    0,    0,    0,    0,
         0,    9,    0,    7,    0,    0,    0,    0,    0,    3,
         0,    0,    0,    0,    2,    0,    0,    4,    0,    0,
         0,    0,    0,    0,    5,    6,    0
@@ -478,18 +478,15 @@ char *yytext;
 #line 1 "zoomjoystrong.lex"
 #line 2 "zoomjoystrong.lex"
 /*
-* 
-*
-*
-*
-*
+* A lex file defining tokens for a programmatic drawing app
+* Written by Pieter Holleman, October 2017
 *
 */
-	#include <stdio.h>
-	#include "zoomjoystrong.tab.h"
-	#include "zoomjoystrong.h"
+#include <stdio.h>
+#include "zoomjoystrong.tab.h"
+#include "zoomjoystrong.h"
 
-#line 493 "lex.yy.c"
+#line 490 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -671,9 +668,9 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
     
-#line 17 "zoomjoystrong.lex"
+#line 14 "zoomjoystrong.lex"
 
-#line 677 "lex.yy.c"
+#line 674 "lex.yy.c"
 
 	if ( !(yy_init) )
 		{
@@ -758,7 +755,7 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 18 "zoomjoystrong.lex"
+#line 15 "zoomjoystrong.lex"
 {
 	return END_STATEMENT;
 
@@ -766,49 +763,49 @@ YY_RULE_SETUP
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 23 "zoomjoystrong.lex"
+#line 20 "zoomjoystrong.lex"
 { 
 	return POINT;
 } 
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 27 "zoomjoystrong.lex"
+#line 24 "zoomjoystrong.lex"
 {
 	return LINE;
 }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 31 "zoomjoystrong.lex"
+#line 28 "zoomjoystrong.lex"
 {
 	return CIRCLE;
 }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 35 "zoomjoystrong.lex"
+#line 32 "zoomjoystrong.lex"
 {
 	return RECTANGLE;
 }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 39 "zoomjoystrong.lex"
+#line 36 "zoomjoystrong.lex"
 {
 	return SET_COLOR; 
 }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 43 "zoomjoystrong.lex"
+#line 40 "zoomjoystrong.lex"
 {
 	return END;
 }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 47 "zoomjoystrong.lex"
+#line 44 "zoomjoystrong.lex"
 {
 	yylval.intVal = atoi(yytext);
 	return INTEGER;
@@ -816,7 +813,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 53 "zoomjoystrong.lex"
+#line 50 "zoomjoystrong.lex"
 {
 	yylval.floatVal = atof(yytext);
 	printf("float");
@@ -826,25 +823,17 @@ YY_RULE_SETUP
 case 10:
 /* rule 10 can match eol */
 YY_RULE_SETUP
-#line 59 "zoomjoystrong.lex"
-{
-	printf("error\n");
-}
-	YY_BREAK
-case 11:
-/* rule 11 can match eol */
-YY_RULE_SETUP
-#line 63 "zoomjoystrong.lex"
+#line 57 "zoomjoystrong.lex"
 {
    ;
 }
 	YY_BREAK
-case 12:
+case 11:
 YY_RULE_SETUP
-#line 71 "zoomjoystrong.lex"
+#line 65 "zoomjoystrong.lex"
 ECHO;
 	YY_BREAK
-#line 848 "lex.yy.c"
+#line 837 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1841,7 +1830,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 71 "zoomjoystrong.lex"
+#line 65 "zoomjoystrong.lex"
 
 
 

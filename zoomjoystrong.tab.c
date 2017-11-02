@@ -438,8 +438,8 @@ static const yytype_int8 yyrhs[] =
 /* YYRLINE[YYN] -- source line where rule number YYN was defined.  */
 static const yytype_uint8 yyrline[] =
 {
-       0,    36,    36,    44,    46,    52,    54,    56,    58,    60,
-      69,    79,    87,   100,   115,   123
+       0,    35,    35,    43,    45,    51,    53,    55,    57,    59,
+      67,    77,    85,    98,   113,   121
 };
 #endif
 
@@ -1356,49 +1356,49 @@ yyreduce:
   switch (yyn)
     {
         case 2:
-#line 36 "zoomjoystrong.y"
+#line 35 "zoomjoystrong.y"
     {
 	
 	;}
     break;
 
   case 3:
-#line 44 "zoomjoystrong.y"
+#line 43 "zoomjoystrong.y"
     {;}
     break;
 
   case 4:
-#line 46 "zoomjoystrong.y"
+#line 45 "zoomjoystrong.y"
     {;}
     break;
 
   case 5:
-#line 52 "zoomjoystrong.y"
+#line 51 "zoomjoystrong.y"
     {;}
     break;
 
   case 6:
-#line 54 "zoomjoystrong.y"
+#line 53 "zoomjoystrong.y"
     {;}
     break;
 
   case 7:
-#line 56 "zoomjoystrong.y"
+#line 55 "zoomjoystrong.y"
     {;}
     break;
 
   case 8:
-#line 58 "zoomjoystrong.y"
+#line 57 "zoomjoystrong.y"
     {;}
     break;
 
   case 9:
-#line 60 "zoomjoystrong.y"
+#line 59 "zoomjoystrong.y"
     {;}
     break;
 
   case 10:
-#line 69 "zoomjoystrong.y"
+#line 67 "zoomjoystrong.y"
     {
       	
       	line((yyvsp[(2) - (5)].intVal), (yyvsp[(3) - (5)].intVal), (yyvsp[(4) - (5)].intVal), (yyvsp[(5) - (5)].intVal));
@@ -1408,14 +1408,14 @@ yyreduce:
     break;
 
   case 11:
-#line 79 "zoomjoystrong.y"
+#line 77 "zoomjoystrong.y"
     {	
 		circle((yyvsp[(2) - (4)].intVal), (yyvsp[(3) - (4)].intVal), (yyvsp[(4) - (4)].intVal));
 	;}
     break;
 
   case 12:
-#line 87 "zoomjoystrong.y"
+#line 85 "zoomjoystrong.y"
     {
 		if (colorCheck((yyvsp[(2) - (4)].intVal), (yyvsp[(3) - (4)].intVal), (yyvsp[(4) - (4)].intVal)) < 1){
 			printf("color out of range");
@@ -1427,7 +1427,7 @@ yyreduce:
     break;
 
   case 13:
-#line 100 "zoomjoystrong.y"
+#line 98 "zoomjoystrong.y"
     {
 
 
@@ -1441,7 +1441,7 @@ yyreduce:
     break;
 
   case 14:
-#line 115 "zoomjoystrong.y"
+#line 113 "zoomjoystrong.y"
     {
 		
 
@@ -1451,7 +1451,7 @@ yyreduce:
     break;
 
   case 15:
-#line 123 "zoomjoystrong.y"
+#line 121 "zoomjoystrong.y"
     {;}
     break;
 
@@ -1671,7 +1671,7 @@ yyreturn:
 }
 
 
-#line 125 "zoomjoystrong.y"
+#line 123 "zoomjoystrong.y"
 
 
 /**********************************************************************
